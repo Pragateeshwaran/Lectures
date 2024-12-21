@@ -1,0 +1,32 @@
+Pragateesh Loves deepLearning
+Pragateesh is good at deepLearning 
+Manikandan and Pragateesh studied deepLearning
+Nawfal and Pragateesh studied deepLearning
+sathiesh and Pragateesh studied deepLearning
+Pragateesh know about transformers
+sathiesh know about transformers
+Manikandan know about transformers
+Pragateesh friends are Manikandan , sathiesh , Nawfal , Gowsi , prakash , Sam
+Manikandan friends are Pragateesh , sathiesh , Nawfal , Gowsi , prakash , Sam
+sathiesh friends are Pragateesh , Manikandan , Nawfal , Gowsi , prakash, Sam
+Nawfal friends are Pragateesh , sathiesh , Manikandan , Gowsi , prakash , Sam
+Gowsi friends are Pragateesh , sathiesh , Manikandan , Nawfal , prakash , Sam
+prakash friends are Pragateesh , sathiesh , Manikandan , Nawfal , Gowsi , Sam
+sam friends are Pragateesh , sathiesh , Manikandan , Nawfal , prakash , Gowsi
+Manikandan oftens gets Beat by HOD
+Pragateesh Loves deepLearning
+prakash oftens gets scold by HOD
+Gowsi oftens gets scold by HOD
+sam oftens gets scold by HOD
+Nawfal is UI specialist
+nawfal is good at UI 
+nawfal Knows very well about UI
+Nawfal creates many UI
+prakash is good at cars 
+prakash is good at Bikes
+prakash is repairing Bikes
+prakash is repairing cars
+prakash is Driving cars
+prakash is Driving Bikes 
+Sam is a great mechanic
+Sam is a love to be a mechanic
