@@ -1,0 +1,31 @@
+Embedding Layer:
+    1. Input: [hi, bye, there,...]
+    2. It represents each value in a n-dimensional space, where each value represents how relative it is to each other.
+    3. The more frequent a sequence of words occur together, the more relative they are (near to each other in the n-dim space)
+    4. Homophones issue is resolved using the direction from which the other vector is coming from.
+        4.1: for example let's take the word mole. It has three synonyms human, chemistry, animal. So when the vector related to human is multiplied the mole matrix it has unique direction, than when multiplied with words related to chem and animals.
+
+Transformer Layer:
+    1.Embedding process returns, embedding vectors of all values
+    2.Adding positional encoding: (has 2 formulas refer attention is all you need paper) pos: idx of the value, i: idx of dim
+    for ex: [pragateesh, loves, deeplearning] (length of this is sequence length) -> embeddings: pragateesh:[1.2, 3.2], loves: [2.3, 5.2], deeplearning:[4.2,6.4], d_model = 2 (len of embeddings), pos = idx of the word in seq (pos of "loves" is 1),
+    i = idx of dim of embeddings (for ex the idx of 1.2 embedding in pragateesh is 0).
+    To calculate PE
+        i. PE(pos,2i)=sin(pos/scaling_factor ^ (2i/d_model))
+        ii. PE(pos,2i+1)=cos(pos/scaling_factor ^ (2i+1/d_model))
+    for even number idx of embedding use formula one and for odd use formula 2, this is to create differentiate
+    3. Q,K,V the above value is splitted into three. All three matrices are the same.
+        (If done in parallel, then Multi Head Attention)
+        QxK^T = Attention Scores mat
+        QxK^T x V = logits
+        Q, K, V -> seq len x embedding dim
+        QxK^T -> seq len x seq len
+        QxK^Tx V -> seq len x embedding dim (produces logits)
+        Feedforward: (used to produce probabilities for words not present in seq len)
+            size: embedding dim x 4 x embedding size
+        token mat (Linear / projection layer) : 4 x embedding size x token size
+        softmax: max val in the last row of token mat
+        it is the token value for the next word.
+
+
+url: https://github.com/Pragateeshwaran/Lectures/blob/main/4.%20AttentionNetworks/main.ipynb
